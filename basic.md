@@ -1,4 +1,4 @@
 ---
-layout: page
+layout: blogpost
 ---
 Basic Text

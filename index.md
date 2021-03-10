@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: blogpost
 title: My Title
 ---
 
