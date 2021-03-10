@@ -1,6 +1,6 @@
 ---
 layout: blogpost
-title: My Title
+post_title: My Title
 ---
 
 My Content
