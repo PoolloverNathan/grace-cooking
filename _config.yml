@@ -1,6 +1,7 @@
 width: "3in";
 color: "white";
-color-alt: "#303030";
+color_alt: "#303030";
+color_accent: blue;
 
 
 
