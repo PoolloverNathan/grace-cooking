@@ -11,10 +11,11 @@
   }
 }
 body {
-  background-color: {{site.color_alt}}
-  color: {{site.color}}
+  background-color: {{site.color_alt}};
+  color: {{site.color}};
 }
 h1 {
   width: 80%;
   text-align: center;
-  
+  background-color: {{site.color_accent}};
+}
