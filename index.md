@@ -1,5 +1,5 @@
 ---
-title: {{site.name}}
+title: {site.name}
 author: PoolloverNathan
 ---
 {{site.description | default "*No description provided.*"}}
