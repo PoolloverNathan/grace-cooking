@@ -1,3 +1,9 @@
+width: 3in;
+color: white;
+color-alt: "#303030";
+
+
+
 defaults:
   -
     scope:
