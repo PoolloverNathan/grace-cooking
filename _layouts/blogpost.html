@@ -8,7 +8,7 @@
 {% endif %}
 {% if page.author %}
 {% assign author = site.data.authors[page.author] %}
-<img id=auth_img src="{{author.pfp}}" /><a class=auth_name href="{{author.page}}">{{author.name}}</a>
+<img id=auth_img src="{{author.pfp}}" /><a class=auth_name href="{{author.page}}">&emsp;{{author.name}}</a>
 {% endif %}
 <p>{{ content }}</p>
 </div>
