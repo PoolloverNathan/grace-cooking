@@ -33,11 +33,7 @@ img {
     width: {{site.pfpsize}};
     height: {{site.pfpsize}};
     {% endif %}
+    vertical-align: middle;
     border-radius: 15px;
   }
-}
-#auth_name {
-  display: inline;
-  height: {{site.pfpsize}};
-  vertical-align: middle;
 }
