@@ -29,7 +29,9 @@ img {
   height: auto;
   #auth_img {
     display: inline;
+    {% if site.pfpsize %}
     width: {{site.pfpsize}};
     height: {{site.pfpsize}};
+    {% endif %}
   }
 }
