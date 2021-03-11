@@ -1,5 +1,5 @@
-width: 3in;
-color: white;
+width: "3in";
+color: "white";
 color-alt: "#303030";
 
 
