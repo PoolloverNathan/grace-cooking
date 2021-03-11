@@ -1,0 +1,20 @@
+---
+---
+@media (min-width: {{site.width}}) {
+  #page {
+    width: {{site.width}};
+  }
+}
+@media (max-width: {{site.width}}) {
+  #page {
+    width: 100%;
+  }
+}
+body {
+  background-color: {{site.color_alt}}
+  color: {{site.color}}
+}
+h1 {
+  width: 80%;
+  text-align: center;
+  
