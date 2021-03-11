@@ -9,3 +9,4 @@ defaults:
     scope:
       path: ""
     values:
+      layout: blogpost
