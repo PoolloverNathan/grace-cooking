@@ -2,10 +2,10 @@ width: "5in"
 color: "white"
 color_alt: "#303030"
 color_accent: blue
+name: "NoMoreNotes::Blog"
 
 defaults:
   -
     scope:
       path: ""
     values:
-      sitename: "NoMoreNotes::Blog"
