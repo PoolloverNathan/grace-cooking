@@ -5,7 +5,7 @@ color_accent: blue
 name: "NoMoreNotes::Blog"
 pfpsize: 32px
 color_link: gray;
-color_link_hover: light-gray;
+color_link_hover: lightgray;
 
 defaults:
   -
