@@ -34,7 +34,7 @@ jobs:
           fi
           failed=0
           for a in $(cut -d ":" -f1 _data/authors.yml); do
-            if [ ! -f authors/$a.md ] || [ ! -f authors/$a.html ]; then
+            if { [ ! -f authors/$a.md ] || [ ! -f authors/$a.html ]; }; then
               failed=1
               echo "ER: Missing info page for $a"
             fi
