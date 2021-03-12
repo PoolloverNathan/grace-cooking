@@ -15,4 +15,4 @@ title: false
 {{p.excerpt}}
 {% else %}
 No posts? Ridiculous.
-{% endif %}
+{% endfor %}
