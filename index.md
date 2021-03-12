@@ -1,5 +1,5 @@
 ---
-author: PoolloverNathan
+author: null
 published: true
 title: false
 ---
