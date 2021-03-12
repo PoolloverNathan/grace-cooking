@@ -11,7 +11,7 @@ title: false
 # First 5 Posts
 {% for p in site.posts limit: 5 %}
 ## [{{p.title}}]({{p.url}})
-{{author name=p.author}}
+{{include author.html name=p.author}}
 {{p.excerpt}}
 {% else %}
 No posts? Ridiculous.
