@@ -10,7 +10,7 @@ title: false
 
 # First 5 Posts
 {% for p in site.posts limit: 5 %}
-## {{p.name}}
+## [{{p.name}}]({{p.url}})
 {{author name=p.author}}
 {{p.excerpt}}
 {% else %}
