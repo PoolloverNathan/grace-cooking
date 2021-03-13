@@ -11,6 +11,6 @@ title: false
 # First 5 Posts
 {% for p in site.posts limit: 5 %}
 ## [{{p.title}}]({{p.url}})
-{% include author.html name=p.author %}
+{% if p.author %}{% include author.html name=p.author %}{% endif %}
 {{p.excerpt}}
 {% endfor %}
