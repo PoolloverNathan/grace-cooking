@@ -11,7 +11,7 @@ title: false
 # First 5 Posts
 {% for p in site.posts limit: 5 %}
 <div class="rounded" style="color: {{site.card_color}}">
-## [{{p.title}}]({{p.url}})
+  <h2><a href="{{p.url}}">{{p.title}}</a></h2>
 {% if p.author %}{% include author.html name=p.author %}{% endif %}
 {{p.excerpt}}
 </div>
