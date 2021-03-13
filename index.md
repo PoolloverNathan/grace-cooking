@@ -13,6 +13,4 @@ title: false
 ## [{{p.title}}]({{p.url}})
 {% include author.html name=p.author %}
 {{p.excerpt}}
-{% else %}
-No posts? Ridiculous.
 {% endfor %}
