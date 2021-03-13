@@ -7,6 +7,7 @@ pfpsize: 32px
 color_link: gray;
 color_link_hover: lightgray;
 permalink: "/:slug"
+card_color: "#454545"
 
 defaults:
   -
