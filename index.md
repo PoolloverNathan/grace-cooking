@@ -10,7 +10,9 @@ title: false
 
 # First 5 Posts
 {% for p in site.posts limit: 5 %}
+<div class="rounded" style="color: {{site.card_color}}">
 ## [{{p.title}}]({{p.url}})
 {% if p.author %}{% include author.html name=p.author %}{% endif %}
 {{p.excerpt}}
+</div>
 {% endfor %}
