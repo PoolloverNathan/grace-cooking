@@ -6,7 +6,7 @@ title: false
 # {{site.name}}
 {{site.description | default "*No description provided.*"}}
 
-**{{site.posts.size}}** posts&emsp;**{{site.pages.size}}** pages&emsp;**{{site.data.authors.size}}** authors
+{% include pagecount %}
 
 # First 5 Posts
 {% for p in site.posts limit: 5 %}
