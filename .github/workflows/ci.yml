@@ -37,10 +37,14 @@ jobs:
             if { [ ! -f authors/$a.md ] && [ ! -f authors/$a.html ]; }; then
               failed=1
               echo "ER: Missing info page for $a"
+            else
+              echo "OK: Found info page for $a"
             fi
             if [ ! -f authors/$a.png ]; then
               failed=1
               echo "ER: Missing profile picture for $a"
+            else
+              echo "OK: Found profile picture for $a"
             fi
           done
           exit $failed
