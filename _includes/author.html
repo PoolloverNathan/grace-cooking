@@ -1,6 +1,6 @@
 {% assign authors = site.data.authors %}
 {% if authors[include.name] %}
-<img class=auth_img src="/authors/{{include.name}}.png" />&emsp;<a class=auth_name href="/authors/{{include.name}}">{{authors[include.name]}}</a>
+<img {{include.attributes}} class="auth_img {{include.classes}}" src="/authors/{{include.name}}.png" />&emsp;<a class=auth_name href="/authors/{{include.name}}">{{authors[include.name]}}</a>
 {% else %}
 <a class=redtext href="/authors/{{include.name}}">unknown author {{include.name}}</a>
 {% endif %}
