@@ -13,16 +13,17 @@ function startGame() {
     myGamePiece = new component(30, 30, "red", 10, 120);
     myGamePiece.gravity = 0.05;
     myScore = new component("30px", "Consolas", "black", 280, 40, "text");
+    myGameArea.canvas = document.getElementById("cv");
     myGameArea.start();
 }
 
 var myGameArea = {
-    canvas : document.createElement("canvas"),
+    canvas : null,//document.createElement("canvas"),
     start : function() {
         this.canvas.width = 480;
         this.canvas.height = 270;
         this.context = this.canvas.getContext("2d");
-        document.body.insertBefore(this.canvas, document.getElementById("canvasBefore"));
+        //document.body.insertBefore(this.canvas, document.getElementById("canvasBefore"));
         this.frameNo = 0;
         this.interval = setInterval(updateGameArea, 20);
         },
@@ -126,4 +127,5 @@ function accelerate(n) {
     myGamePiece.gravity = n;
 }
 </script>
+<canvas id="cv"></canvas>
 <p id="canvasBefore">Space to jump, Enter to jump less</p>
