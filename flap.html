@@ -1,6 +1,7 @@
 ---
 hidden: true
 title: Flap!
+published: true
 ---
 <script>
 
@@ -21,7 +22,7 @@ var myGameArea = {
         this.canvas.width = 480;
         this.canvas.height = 270;
         this.context = this.canvas.getContext("2d");
-        document.body.insertAfter(this.canvas, document.body.childNodes[0]);
+        document.body.insertBefore(this.canvas, document.getElementById("canvasBefore"));
         this.frameNo = 0;
         this.interval = setInterval(updateGameArea, 20);
         },
@@ -125,3 +126,4 @@ function accelerate(n) {
     myGamePiece.gravity = n;
 }
 </script>
+<p id="canvasBefore">Space to jump, Enter to jump less</p>
