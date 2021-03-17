@@ -47,6 +47,7 @@ function component(width, height, color, x, y, type) {
     this.y = y;
     this.gravity = 0;
     this.gravitySpeed = 0;
+    this.rectType = "fill"
     this.update = function() {
         ctx = myGameArea.context;
         if (this.type == "text") {
@@ -54,8 +55,8 @@ function component(width, height, color, x, y, type) {
             ctx.fillStyle = color;
             ctx.fillText(this.text, this.x, this.y);
         } else {
-            ctx.fillStyle = color;
-            ctx.fillRect(this.x, this.y, this.width, this.height);
+            ctx[this.rectType + "Style"] = color;
+            ctx[this.rectType + "Rect"](this.x, this.y, this.width, this.height);
         }
     }
     this.newPos = function() {
@@ -97,6 +98,8 @@ function updateGameArea() {
             if ((!localStorage.highScore) || (localStorage.highScore < myGamePiece.frameNo)) {
               localStorage.highScore = myGameArea.frameNo;
             }
+          myGamePiece.rectType = "stroke";
+          myGamePiece.update();
             location.path = "/dead.flap";
             return;
         } 
