@@ -129,4 +129,20 @@ function accelerate(n) {
 </script>
 <canvas id="cv"></canvas>
 <p id="canvasBefore">Space to jump, Enter to jump less</p>
-<script>startGame();</script>
+<script>
+  document.addEventListener("keydown", e => {
+    if (e.repeat) e.preventDefault();
+    else {
+      e.preventDefault();
+      switch(e.key) {
+        case "Enter":
+          myGamePiece.gravitySpeed = -1;
+          break;
+        case " ":
+          myGamePiece.gravitySpeed = -2;
+          break;
+      }
+    }
+  });
+  startGame();
+</script>
