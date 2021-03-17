@@ -121,10 +121,10 @@ function updateGameArea() {
     }
     //myScore.text="SCORE: " + myGameArea.frameNo;
     //myScore.update();
-    progress.style.width = myGameArea.frameNo/1000 + "%";
-    progress.textContent = myGameArea.frameNo.toString();
     cancel = myGamePiece.newPos()
     myGamePiece.update();
+    progress.style.width = myGameArea.frameNo/1000 + "%";
+    progress.textContent = myGameArea.frameNo.toString();
 }
 
 function everyinterval(n) {
