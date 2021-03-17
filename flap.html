@@ -139,10 +139,10 @@ function accelerate(n) {
           myGamePiece.gravitySpeed = -1;
           break;
         case " ":
+          if(!started) {started = true; startGame(); return;}
           myGamePiece.gravitySpeed = -2;
           break;
       }
     }
   });
-  startGame();
 </script>
