@@ -130,6 +130,7 @@ function accelerate(n) {
 <canvas id="cv"></canvas>
 <p id="canvasBefore">Space to jump, Enter to jump less</p>
 <script>
+  var started = false;
   document.addEventListener("keydown", e => {
     if (e.repeat) e.preventDefault();
     else {
