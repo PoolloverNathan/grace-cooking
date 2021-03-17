@@ -150,6 +150,11 @@ function accelerate(n) {
           break;
         case "F7":
           canDamage = false;
+          break;
+        case "F4":
+          cancel = canDamage = true;
+          break;
+        }
       }
     }
   });
