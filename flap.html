@@ -46,13 +46,14 @@ function component(width, height, color, x, y, type) {
     this.x = x;
     this.y = y;
     this.gravity = 0;
+    this.color = color;
     this.gravitySpeed = 0;
     this.rectType = "fill"
     this.update = function() {
         ctx = myGameArea.context;
         if (this.type == "text") {
             ctx.font = this.width + " " + this.height;
-            ctx.fillStyle = color;
+            ctx.fillStyle = this.color;
             ctx.fillText(this.text, this.x, this.y);
         } else {
             ctx[this.rectType + "Style"] = color;
