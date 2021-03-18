@@ -126,7 +126,7 @@ function updateGameArea() {
     //myScore.update();
     cancel = myGamePiece.newPos()
     myGamePiece.update();
-    progress.style.width = myGameArea.frameNo/1000 + "%";
+    progress.style.width = (myGameArea.frameNo/1000).toString() + "%";
     progress.textContent = myGameArea.frameNo.toString();
 }
 
