@@ -159,16 +159,29 @@ function accelerate(n) {
           break;
         case "F7":
           canDamage = false;
+          myGamePiece.color = myGamePiece.gravity ? "blue" : "cyan";
           break;
         case "F4":
           cancel = canDamage = true;
+          myGamePiece.color = "white";
           break;
         case "F9":
           canDamage = true;
+          myGamePiece.color = myGamePiece.gravity ? "red" : "purple";
           break;
         case "F3":
           alert(myGameArea.frameNo);
-          break
+          break;
+        case "Backspace":
+          myGamePiece.gravitySpeed = 2;
+        case "F6":
+          myGamePiece.gravity = 0;
+          myGamePiece.color = canDamage ? "purple" : "cyan"; 
+          break;
+        case "F6":
+          myGamePiece.gravity = 0.05;
+          myGamePiece.color = canDamage ? "red" : "blue"; 
+          break;
       }
     }
   });
