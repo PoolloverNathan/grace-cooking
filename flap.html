@@ -183,6 +183,9 @@ function accelerate(n) {
           myGamePiece.gravity = 0.05;
           myGamePiece.color = canDamage ? "red" : "blue"; 
           break;
+        case ".":
+          myGamePiece.gravitySpeed = 0;
+          break;
       }
     }
   });
