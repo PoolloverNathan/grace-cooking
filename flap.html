@@ -9,7 +9,7 @@ published: true
 var myGamePiece;
 var myObstacles = [];
 //var myScore;
-var cancel = false;
+var cancel = false; var abort = false;
 var canDamage = true;
 var progress = document.getElementById("progress");
 
@@ -99,9 +99,9 @@ function updateGameArea() {
               localStorage.highScore = myGameArea.frameNo;
             }
           myGamePiece.rectType = "stroke";
+ctx.lineWidth = 10;
+          abort = true;
           myGamePiece.update();
-            location.path = "/dead.flap";
-            return;
         } 
     }
   }
@@ -119,13 +119,14 @@ function updateGameArea() {
         myObstacles.push(new component(10, x - height - gap, "green", x, height + gap));
     }
     for (i = 0; i < myObstacles.length; i += 1) {
-        myObstacles[i].x += -1;
+        myObstacles[i].x += -1.25;
         myObstacles[i].update();
     }
     //myScore.text="SCORE: " + myGameArea.frameNo;
     //myScore.update();
     cancel = myGamePiece.newPos()
     myGamePiece.update();
+  if(abort) return;
     progress.style.width = (myGameArea.frameNo/1000).toString() + "%";
     progress.textContent = myGameArea.frameNo.toString();
 }
