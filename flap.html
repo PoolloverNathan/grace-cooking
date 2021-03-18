@@ -127,7 +127,7 @@ ctx.lineWidth = 10;
     //myScore.update();
     cancel = myGamePiece.newPos()
     myGamePiece.update();
-    progress.style.width = (myGameArea.frameNo/1000).toString() + "%";
+    progress.style.width = (myGameArea.frameNo/100).toString() + "%";
     progress.textContent = myGameArea.frameNo.toString();
 }
 
@@ -179,7 +179,7 @@ function accelerate(n) {
           myGamePiece.gravity = 0;
           myGamePiece.color = canDamage ? "purple" : "cyan"; 
           break;
-        case "F6":
+        case "F10":
           myGamePiece.gravity = 0.05;
           myGamePiece.color = canDamage ? "red" : "blue"; 
           break;
