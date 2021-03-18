@@ -56,7 +56,7 @@ function component(width, height, color, x, y, type) {
             ctx.fillStyle = this.color;
             ctx.fillText(this.text, this.x, this.y);
         } else {
-            ctx[this.rectType + "Style"] = color;
+            ctx[this.rectType + "Style"] = this.color;
             ctx[this.rectType + "Rect"](this.x, this.y, this.width, this.height);
         }
     }
