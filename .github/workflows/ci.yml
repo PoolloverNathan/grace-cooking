@@ -40,7 +40,7 @@ jobs:
             else
               echo "OK: Found info page for $a"
             fi
-            if { [ ! -f authors/$a.md ] && [ ! -f authors/$a.html ]; };then
+            if { [ ! -f authors/$a.png ] && [ ! -f authors/$a.jpg ]; };then
               failed=1
               echo -e "\e[91mER\e[39m: Missing profile picture for $a"
             else
