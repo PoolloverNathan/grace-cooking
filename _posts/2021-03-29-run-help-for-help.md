@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: Run /help for help!
 author: PoolloverNathan
 ---
