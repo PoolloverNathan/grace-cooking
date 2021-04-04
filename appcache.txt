@@ -1,0 +1,9 @@
+---
+permalink: my.appcache
+---
+CACHE MANIFEST
+# {{ site.env.CI_COMMIT_SHA }}:{{ site.env.CI_JOB_ID }}
+{% for pg in site.posts %}
+{{ pg.path }}
+NETWORK:
+*
