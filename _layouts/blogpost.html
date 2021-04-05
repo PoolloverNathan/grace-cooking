@@ -1,4 +1,4 @@
-<html {%- if page.appcache -%}appcache="{{page.appcache}}"{%- endif -%}>
+<html {% if page.appcache -%}appcache="{{page.appcache}}"{%- endif -%}>
 <head>
 {%- include scripts.html -%}
 <link rel=stylesheet href="/styles.css" />
