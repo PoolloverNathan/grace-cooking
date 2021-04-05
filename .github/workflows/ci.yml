@@ -38,13 +38,13 @@ jobs:
               failed=1
               echo -e "\e[91mNO \e[94mIP\e[39m $a"
             else
-              echo "\e[92mOK \e[94mPF\e[39m $a"
+              echo -e "\e[92mOK \e[94mPF\e[39m $a"
             fi
             if { [ ! -f authors/$a.png ] && [ ! -f authors/$a.jpg ]; };then
               failed=1
               echo -e "\e[91mNO \e[95mPF\e[39m $a"
             else
-              echo "\e[92mOK \e[95mPF\e[39m $a"
+              echo -e "\e[92mOK \e[95mPF\e[39m $a"
             fi
           done
           exit $failed
