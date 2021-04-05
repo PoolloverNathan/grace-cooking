@@ -36,15 +36,15 @@ jobs:
           for a in $(cut -d ":" -f1 _data/authors.yml); do
             if { [ ! -f authors/$a.md ] && [ ! -f authors/$a.html ]; }; then
               failed=1
-              echo -e "\e[91mER\e[39m: Missing info page for $a"
+              echo -e "\e[91mNO \e[94mIP\e[39m $a"
             else
-              echo "OK: Found info page for $a"
+              echo "\e[92mOK \e[94mPF\e[39m $a"
             fi
             if { [ ! -f authors/$a.png ] && [ ! -f authors/$a.jpg ]; };then
               failed=1
-              echo -e "\e[91mER\e[39m: Missing profile picture for $a"
+              echo -e "\e[91mNO \e[95mPF\e[39m $a"
             else
-              echo "OK: Found profile picture for $a"
+              echo "\e[92mOK \e[95mPF\e[39m $a"
             fi
           done
           exit $failed
